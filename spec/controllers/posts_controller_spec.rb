@@ -16,14 +16,28 @@ describe "GET #new" do
 	end
 
 describe "POST #create" do
+	context "with valid attributes" do
 	it "creates a new post" do
-
-		end
+		expect {
+			post :create, post: FactoryGirl.attributes_for(:post)
+		}.to change(Post, :count).by(1)
+	  end
 
 		it "redirects to root_path" do
 
 		end
 	end
+
+	context "with invalid attributes" do
+		it "doesn't create a new post" do
+
+		end
+		it "renders the new template" do
+
+		end
+	end
+end	
+
 describe "GET #show" do
 	it "renders the show template" do
 		post = FactoryGirl.create(:post)

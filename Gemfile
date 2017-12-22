@@ -5,10 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-group :development, :test do
-  gem 'factory_bot_rails'
-end
-
 #gem for testing (added)
 gem 'rails-controller-testing'
 #gem for easy post creation (added)
