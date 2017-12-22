@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :post do
-    title "First Post"
+    title  "First Post"
     author  "someone"
     content "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
