@@ -15,6 +15,15 @@ describe "GET #new" do
 		end
 	end
 
+describe "POST #create" do
+	it "creates a new post" do
+
+		end
+
+		it "redirects to root_path" do
+
+		end
+	end
 describe "GET #show" do
 	it "renders the show template" do
 		post = FactoryGirl.create(:post)
