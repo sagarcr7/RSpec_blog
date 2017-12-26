@@ -19,8 +19,8 @@ describe "POST #create" do
 	context "with valid attributes" do
 	it "creates a new post" do
 		expect {
-			post :create, post: FactoryGirl.attributes_for(:post)
-		}.to change(Post, :count).by(1)
+			post :create, params: { post: FactoryGirl.attributes_for(:post) }
+          }.to change(Post, :count).by(1)
 	  end
 
 		it "redirects to root_path" do
@@ -41,7 +41,7 @@ end
 describe "GET #show" do
 	it "renders the show template" do
 		post = FactoryGirl.create(:post)
-		get :show, id: post.id
+		get :show, params: { id: post.id }
 		expect(response).to render_template :show
 		end
 	end
