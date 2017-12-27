@@ -21,11 +21,11 @@
           <a class="navbar-brand" href="/">Blog</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to 'Show' %> <a href="posts/show.html.erb"></a> </li>
-            <li><%= link_to 'Edit' %> <a href="posts/edit.html.erb"> </a> </li>
-            <li><%= link_to 'Delete'%> <a href="posts/delete.html.erb"> </a> </li>
-          </ul>
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <%= render 'shared/nav' %>
+      </nav>
+          
         </div>
 
     <%= yield %>
